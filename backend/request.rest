@@ -1,0 +1,26 @@
+### GET ALL DATA
+GET http://localhost:5000/users
+
+### GET SINGLE DATA
+GET http://localhost:5000/users/1
+
+### CREATE DATA
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "testing",
+    "email" : "testing@mail.com",
+    "gender" : "Male"
+}
+
+### UPDATE DATA
+PATCH  http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "gender" : "Female"
+}
+
+### UPDATE DATA
+DELETE   http://localhost:5000/users/1
